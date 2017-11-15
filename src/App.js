@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './Styles/App.css';
+import Accordion from './Components/Accordion/accordion.js'
 
 class App extends Component {
   render() {
@@ -14,6 +15,12 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <div className = "row">
+        <div className="col-sm-4"> hi from sajith </div>
+        <div className="col-sm-4"> hi from sajith </div>
+        <div className="col-sm-4"> hi from sajith </div>
+        </div>
+        <Accordion />
       </div>
     );
   }
