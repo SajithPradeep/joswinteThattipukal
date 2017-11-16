@@ -20,7 +20,7 @@ body {
 }
 
 .answer {
-  color: #fff;
+  padding-right: 10px;
 }
 
 .summary {
@@ -73,11 +73,9 @@ body {
   // transform: rotateX(0deg);
   // transition: all 0.1s ease-in-out;
   height: 100%;
-  width: 94%;
   line-height: 50px;
-  text-indent: 40px;
   background: #fff;
-  text-align: left;
+  text-align: center;
   padding: 10px;
 }
 
