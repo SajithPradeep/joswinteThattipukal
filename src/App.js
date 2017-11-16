@@ -9,17 +9,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
         </header>
-          <button className="btn btn-primary">React</button>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <div className = "row">
-        <div className="col-sm-4"> hi from sajith </div>
-        <div className="col-sm-4"> hi from sajith </div>
-        <div className="col-sm-4"> hi from sajith </div>
-        </div>
         <Accordion />
       </div>
     );
