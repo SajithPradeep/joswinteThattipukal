@@ -50,11 +50,11 @@ class AccordionItem extends React.Component {
     }
   }
   const sampleQuestions = {
-    question1: {summary:'Wallets', answer1:'Ottawa baby!!', answer2:'Hi From sajith'},
+    question1: {summary:'Wallets', answer1:'Trifold', answer2:'Bifold'},
     question2: {summary:'Belts', answer1:'Coming Soon'},
     question3: {summary:'Jackets', answer1:'Coming Soon'},
     question4: {summary:'About US', answer1:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
-    question5: {summary:'Contact US', answer1:'Skim milk, which is water that\'s lying about being milk'}
+    question5: {summary:'Contact US', answer1:'Sample Text'}
   };
   
   export default Accordion;
