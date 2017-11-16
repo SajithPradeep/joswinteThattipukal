@@ -1,47 +1,17 @@
-// @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700);
-// @import url(https://fonts.googleapis.com/css?family=Maven+Pro);
-
-$bodyBg: #3a3042;
-$underLine: #ff784f;
-
 body {
-  background: $bodyBg;
   font-family: 'Maven Pro', sans-serif;
   margin: 0;
   
 }
 
-svg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-}
-
-h1 {
-  color: #fff;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Josefin Slab', serif;
-  font-size: 66px;
-  margin-top: 10vh;
-  letter-spacing: 10px;
-}
-
 .accordion-container {
-  width: 60%;
-  min-width: 310px;
   margin: 5vh auto;
-  border-radius: 5px;
   background-color: #fff;
-  box-shadow:-2px 1px 2px 2px #212121;
-  
+  margin: 10px; 
   
   div {
-    border-bottom: 3px solid;
-    border-color: $underLine;
-    transition: border-color 0.5s ease-in;
+    border-bottom: 4px solid #fff;
+    // transition: border-color 0.5s ease-in;
   }
 }
 
@@ -50,7 +20,6 @@ h1 {
 }
 
 .answer {
-  background: $bodyBg;
   color: #fff;
 }
 
@@ -68,27 +37,49 @@ h1 {
 .folding-pannel {
   display: block;
   color: black;
-  transition: all 0.2s ease-in;
+  transition: all 2s ease-in;
   line-height: 40px;
-  border-top: 2px solid $bodyBg;
 }
 
 .active .summary {
   border-color: transparent;
-  transition: border-color 0.2s ease-out;
+  // transition: border-color 0.2s ease-out;
+}
+
+.inactive {
+  background: lightslategray;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .inactive .folding-pannel {
   transform-origin: 100% 0%;
-  transform: perspective(250px) rotateX(-90deg);
-  transition: all 0.4s ease-in-out;
+  transform: rotateX(-90deg);
+  transition: all 0.1s linear;
   height: 0;
-
+  background: #fff; 
 }
+
+.active {
+  background: lightsalmon;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .active .folding-pannel {
-  transform: perspective(350px) rotateX(0deg);
-  transition: all 0.4s ease-in-out;
-  height: 50px;
+  transform: rotateX(0deg);
+  transition: all 0.1s linear;
+  height: 100%;
+  width: 100%;
   line-height: 50px;
   text-indent: 40px;
+  background: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
 }
